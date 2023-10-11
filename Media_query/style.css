@@ -1,0 +1,261 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    line-height: 1.3;
+    background: blur;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0c10;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(banner3.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+    margin-top: auto;
+    padding: 1.2rem;
+    position: relative;
+    font-family: 'Lexend', sans-serif;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 400px;
+    transition: all .5s ease;
+}
+
+.navbar-brand:hover {
+    color: tomato;
+    transform: scale(110%);
+}
+
+.navbar-nav {
+    list-style: none;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    margin-right: -20px;
+    position: relative;
+}
+
+.navbar-nav a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400px;
+    transition: all .5s ease;
+}
+
+.navbar-nav a:hover{
+    color: tomato;
+    font-size: 140%;
+    transform: scale(150px);
+}
+
+
+.banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f7e2da;
+    padding: 2rem 0;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.banner p {
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+    color: fff;
+}
+
+.banner form {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    outline: 0;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 25px; /* Added border radius for a more Pinterest-like look */
+}
+
+.search-btn {
+    width: 80px;
+    font-size: 1.1rem;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 20px 0px 20px;
+}
+
+.cont .heading {
+    width: 80%;
+    max-width: 600px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.cont .heading h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.cont .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Adjusted to space-evenly for a Pinterest-like grid */
+}
+
+.cont .box .columns {
+    flex: 1;
+    margin: 3px;
+}
+
+.cont .box .columns img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.cont .box .columns img:hover {
+    border-color: aliceblue;
+}
+
+/* footer */
+footer{
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3em;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: tomato;
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: 'Lexend', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .cont .box{
+        flex-direction: column;
+    }
+    .cont .box .columns{
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width:600px){
+    .cont .heading{
+        width: 100%;
+    }    
+    .cont .heading h3{
+        font-size: 1em;
+    }
+}
